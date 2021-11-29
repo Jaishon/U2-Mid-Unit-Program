@@ -18,10 +18,44 @@ Total Earnings: $1184.38
 
  */
 
+import javax.swing.*;
+
 public class SalesCommission {
 
     public static void main(String[] args) {
+        hourlyrate();
+        hoursWorked();
+        commission();
+        sales();
+        totalEarned();
 
     }
+
+public static void hourlyrate(){
+        double rate = Double.parseDouble(JOptionPane.showInputDialog("What is your hourly rate ?"));
+        double hourlyrate = rate;
+    }
+public static void hoursWorked(){
+    double hours = Double.parseDouble(JOptionPane.showInputDialog("How many hours did you work ?"));
+    double hoursWorked = hours;
+}
+public static void commission(){
+        double commissionrate = Double.parseDouble(JOptionPane.showInputDialog("What is the percentage of commission you make ?"));
+        double commission = commissionrate;
+}
+
+public static void sales(){
+      double totalSales = Double.parseDouble(JOptionPane.showInputDialog("What is your total sales ?"));
+      double sales = totalSales;
+}
+public static void totalEarned(){
+      double total = hourlyrate * hoursWorked;
+
+}
+
+
+
+
+
 
 }
